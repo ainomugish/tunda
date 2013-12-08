@@ -1,0 +1,22 @@
+<%= simple_form_for(@order) do |f| %>
+  
+
+     <%= f.error_notification %>
+  
+
+
+    <%= f.input :name, :required =>true, :autofocus => true , :size => 40%>
+    <div class=''>
+      <%= f.label :address %>
+      <%= f.text_area :address, :required =>true, :rows => 3 , :cols => 55 %>
+    </div>
+      <%= f.input :email, :size => 40 %>
+   
+
+    <%= f.select :pay_type , Order::PAYMENT_TYPES, :prompt => 'Payment method' %>
+
+  <div class="form-actions">
+    <%= f.submit 'Place Order' ,  :class => 'btn btn-primary' %>
+    
+  </div>
+<% end %>

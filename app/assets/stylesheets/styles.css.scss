@@ -1,0 +1,65 @@
+
+$baseFontFamily: Oxygen;
+$navbarBackground: green;
+$navbarBackgroundHighlight: white;
+$navbarHeight: 80px;
+$btnPrimaryBackground: green;
+$btnPrimaryText: white;
+$navbarLinkColor: white;
+$linkColor: green;
+$inputBorder: green;
+$formActionsBackground: green;
+$heroUnitBackground: green;
+$tableBorder: green;
+$gridColumns: 11;
+$headingsColor: green;
+/*$textColor: green;*/
+/*$green: #00ffcc;*/
+
+@import 'bootstrap';
+
+/*@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
+@import 'bootstrap-responsive';
+
+.nav-bar{
+	@include box-shadow(none !important);
+	border: 0;
+}
+
+body{
+	padding:120px;
+	background-color: rgb(231, 231, 231);
+}
+
+/* for jquery masonry */
+.box{
+		margin: 5px;
+		padding: 5px;
+		font-size: 11px;
+		line-height: 1.4em;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		float: left;
+		border-radius: 5px;
+		box-shadow: 1px 1px 10px #444;
+		width: 180px;
+}
+
+.box img{
+		display: block;
+		width: 100%;
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		border-radius: 5p
+}
+
+.footer{
+	margin-top: 50px;
+	color: green;
+	$navbarBackground: orange;
+}
+
+.description{
+		margin: 10px 0 5px;
+}
+

@@ -1,0 +1,37 @@
+
+<div class='row'>
+	<div class='span6 offset3'>
+		<div class="well">
+      <p>
+        <strong>Name:</strong>
+        <%= @order.name %>
+      </p>
+
+      <p>
+        <strong>Address:</strong>
+        <%= @order.address %>
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <%= @order.email %>
+      </p>
+
+      <p>
+        <strong>Pay type:</strong>
+        <%= @order.pay_type %>
+      </p>
+
+      <p>
+        <strong>Pay type:</strong>
+        <%=  %>
+      </p>
+
+      <%= link_to 'Edit', edit_order_path(@order) %> |
+      <%= link_to 'Back', orders_path %>
+
+
+	</div>
+	</div>
+</div>
+    

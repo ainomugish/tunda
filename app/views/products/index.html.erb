@@ -1,0 +1,9 @@
+<div id= 'pins'>
+
+	<%= render @products %>
+</div>
+
+<div class="pagination pagination-mini pagination-right">
+<%= will_paginate @products, renderer: BootstrapPagination::Rails %>
+</div>
+

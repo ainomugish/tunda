@@ -1,0 +1,26 @@
+<h4>Listing orders</h4>
+
+<table class="table  table-condensed table-hover">
+  <thead>
+    
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Email</th>
+    <th>Pay type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+</thead>
+
+<tbody>
+
+<%= render @orders %>
+
+</tbody>
+</table>
+
+<br />
+
+<%= link_to 'New Order', new_order_path %>

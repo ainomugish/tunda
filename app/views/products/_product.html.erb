@@ -1,0 +1,12 @@
+
+<div class='box span3'>
+				<h4><p><%= product.title %></p></h4>
+				<%= link_to image_tag(product.image(:medium)) , product %>
+				<%#<%= link_to 'Show' , product, :class => 'btn btn-primary' %>
+				<% if current_user != product.user %>
+				<p><%= link_to 'Edit' , edit_product_path(product) %> |
+				<%= link_to 'Destroy' , product, :method => :delete, data: {:confirm => 'Are you sure?'} %></p>
+				
+				<% end %>
+			</div>
+			

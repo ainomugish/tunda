@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+	<p>You are logged in</p>
+<% else %>
+<div class='row'>
+	<div class='span8'>
+		<div class='hero-unit'>
+					<p><h2>WELCOME </h2></p>
+						<p>Click to start 
+							<%= link_to 'SHOPPING', products_path, class: 'btn btn-large' %>
+						</p>
+		</div>
+	</div>
+</div>
+<% end %>
+

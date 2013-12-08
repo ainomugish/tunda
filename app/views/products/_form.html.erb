@@ -1,0 +1,15 @@
+<%= simple_form_for(@prod, :class => 'form-horizontal') do |f| %>
+  <%= f.error_notification %>
+   <%= f.full_error :image_file_size, class: "alert alert-error" %>
+   <%= f.full_error :image_content_type, class: "alert alert-error" %>
+
+ <div class="form-inputs">
+    <%= f.input :title %>
+    <%= f.input :description, :as => 'text',:rows => '3', :label => 'Description'  %>
+    <%= f.input :image, label: 'Upload an image' %>
+    <%= f.input :price %>
+</div>
+  <div class="form-actions">
+    <%= f.button :submit, 'Create Product', :class => 'btn btn-primary'  %>
+  </div>
+<% end %>
